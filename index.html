@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
@@ -40,29 +39,36 @@
 
 <body>
     <header>
-        <nav>
+        <nav>    
             <div class="row">
-                <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">About</a></li>
-                    <li><a href="#works">What we do</a></li>
-                    <li><a href="#cities">For...</a></li>
+                <img src="resources/img/logo-red.png" alt="Omnifood logo" class="logo">
+                <img src="resources/img/logo-black.png" alt="Omnifood logo" class="logo-black">
+                <ul class="navbar">
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#news">What we do</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">For<ion-icon name="arrow-dropdown"></ion-icon></a></li>
+                        <div class="dropdown-content">
+                            <li><a href="#">Educators</a></li>
+                            <li><a href="#">Parents</a></li>
+                            <li><a href="#">Students</a></li>
+                        </div>
+                    </div>
                     <li><a href="#plans">Blog</a></li>
                 </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
+
         <div class="hero-text-box">
-            <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-            <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+            <h1>Goodbye Fixed.<br>Hello Growth Mindset.</h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#">Grow</a>
             <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
     <section class="section-features js--section-features" id="features">
         <div class="row">
-            <h2>Get food fast &mdash; not fast food</h2>
+            <h2>What we do</h2>
             <p class="long-copy">
                 Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us
                 take care of that, we’re really good at it, we promise!
@@ -454,6 +460,7 @@
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.1/dist/ionicons.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="https://maps.google.com/maps/api/js"></script>
     <script src="resources/js/script.js"></script>
